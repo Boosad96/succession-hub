@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://succession.paychaserhq.com/sitemap.xml

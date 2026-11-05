@@ -1,0 +1,65 @@
+:root{--ink:#1a1a1a;--muted:#555;--line:#ddd;--accent:#0b5e3b;--accent-bg:#e8f5ee;--warn-bg:#fff4e0;--warn-border:#d98a00;--bg:#fff;--card:#f6f6f4}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:var(--bg)}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+.top{background:var(--accent);color:#fff}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding:10px 16px}
+.brand{color:#fff;text-decoration:none;font-weight:800;font-size:1.15rem}
+.brand span{font-weight:400;opacity:.9}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+.top nav a{color:#d8efe2;text-decoration:none;font-size:.95rem}
+.top nav a:hover{color:#fff;text-decoration:underline}
+h1{font-size:1.7rem;line-height:1.25;margin:1.2rem 0 .5rem}
+h2{font-size:1.25rem;margin:1.6rem 0 .5rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+h3{font-size:1.05rem;margin:1.2rem 0 .4rem}
+.lede{font-size:1.1rem;color:#333}
+.small{font-size:.85rem;color:var(--muted)}
+a{color:var(--accent)}
+.searchbox{margin:1rem 0}
+.searchbox label{display:block;font-weight:700;margin-bottom:.3rem}
+.searchbox input{width:100%;padding:.7rem .9rem;font-size:1.1rem;border:2px solid var(--accent);border-radius:8px}
+.hint{font-size:.9rem;color:var(--muted)}
+.hint button{background:var(--accent-bg);border:1px solid var(--accent);color:var(--accent);border-radius:20px;padding:.15rem .7rem;margin:.1rem;cursor:pointer;font-size:.9rem}
+#results{margin:1rem 0}
+.result{border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;margin:.6rem 0;background:#fff}
+.result h3{margin:0 0 .2rem}
+.result .arrow{font-size:1.2rem;font-weight:800;color:var(--accent)}
+.result .src,.src{font-size:.82rem;color:var(--muted)}
+.result .src a,.src a{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{display:block;border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem;text-decoration:none;color:var(--ink);background:var(--card)}
+.card:hover{border-color:var(--accent)}
+.card strong{display:block;font-size:1.05rem}
+.card span{font-size:.85rem;color:var(--muted)}
+.lawbox{background:var(--accent-bg);border:1px solid var(--accent);border-radius:10px;padding:1rem 1.2rem;margin:1.5rem 0}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:.55rem 1.1rem;border-radius:8px;font-weight:700;border:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#094d31}
+.stats li{margin:.3rem 0}
+.disclaimer{border:2px solid #b00;background:#fff5f5;border-radius:8px;padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.95rem}
+.warnbox{background:var(--warn-bg);border:1px solid var(--warn-border);border-radius:8px;padding:1rem 1.2rem;margin:1.5rem 0}
+.badge{display:inline-block;background:#b00;color:#fff;font-size:.72rem;font-weight:700;border-radius:4px;padding:.05rem .4rem;vertical-align:middle}
+.note{font-size:.85rem;color:var(--muted)}
+.notebox{background:var(--accent-bg);border-left:4px solid var(--accent);padding:.6rem .9rem;margin:.8rem 0}
+.unverified{border:1px solid var(--warn-border);border-radius:8px;padding:.8rem 1rem;margin:.7rem 0;background:#fff}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;margin:.6rem 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--card)}
+.num{white-space:nowrap;font-weight:600}
+.faq dt{font-weight:700;margin-top:.7rem}
+.faq dd{margin:.2rem 0 .6rem}
+fieldset{border:1px solid var(--line);border-radius:8px;margin:.8rem 0;padding:.8rem 1rem}
+legend{font-weight:700;padding:0 .4rem}
+fieldset label{display:block;margin:.35rem 0;cursor:pointer}
+#wizard-result .answer{border:2px solid var(--accent);background:var(--accent-bg);border-radius:10px;padding:1rem 1.2rem;margin:1rem 0}
+#wizard-result .answer h3{margin-top:0}
+footer{border-top:1px solid var(--line);margin-top:2.5rem;padding:1rem 16px 2rem;color:var(--muted);font-size:.9rem}
+.crumb{font-size:.9rem;color:var(--muted)}
+.mapping th{width:40%}
+@media (max-width:640px){h1{font-size:1.45rem}.lede{font-size:1rem}table{font-size:.85rem}th,td{padding:.35rem .4rem}}
+@media print{
+.top nav,.searchbox,.hint,.btn{display:none}
+body{font-size:11pt}
+.disclaimer{border:1px solid #999;background:none}
+.tablewrap{overflow:visible}
+}
